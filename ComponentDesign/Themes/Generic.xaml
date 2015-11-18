@@ -150,6 +150,7 @@
                             	<Border x:Name="MouseOverBorder" BorderBrush="Transparent" BorderThickness="1" Margin="0,0,1,0" Grid.Column="1" VerticalAlignment="Center">
                             		<ScrollViewer x:Name="ContentElement" BorderThickness="0" IsTabStop="False" Padding="{TemplateBinding Padding}"/>
                             	</Border>
+                            	<TextBlock x:Name="txtWaterMark" TextWrapping="Wrap" Text="{TemplateBinding WaterMark}" VerticalAlignment="Center" Grid.Column="1" Margin="3,0,1,0" Foreground="#FFB6B3B3" FontFamily="YouYuan" FontWeight="Bold"/>
                             </Grid>
                         </Border>
                         <Border x:Name="DisabledVisualElement" BorderBrush="#A5F7F7F7" BorderThickness="{TemplateBinding BorderThickness}" Background="#A5F7F7F7" IsHitTestVisible="False" Opacity="0"/>

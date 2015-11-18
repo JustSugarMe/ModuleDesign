@@ -9,7 +9,7 @@
     
 	<Grid x:Name="LayoutRoot" Background="White">
 
-		<ComponentDesign:TextBoxEx HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBoxEx" VerticalAlignment="Top" Source="user.png">
+		<ComponentDesign:TextBoxEx HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Source="user.png">
 			<ComponentDesign:TextBoxEx.Resources>
 				<ResourceDictionary>
 					<ResourceDictionary.MergedDictionaries>

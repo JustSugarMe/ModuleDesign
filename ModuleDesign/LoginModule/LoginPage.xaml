@@ -15,8 +15,8 @@
 				<Grid Background="White">
 					<TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="用户登录" VerticalAlignment="Top" Foreground="#FF2C8EBB" FontFamily="SimSun" FontSize="32" FontWeight="Bold" Margin="150,30,149,0"/>
 					<Rectangle Fill="#FF9AA3B4" Height="1" VerticalAlignment="Top" Margin="30,80,30,0"/>
-					<ComponentDesign:TextBoxEx HorizontalAlignment="Left" Height="45" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="305" Margin="63,99,0,0" Source="/ModuleDesign;component/Resources/Login/user.png" Title="用户" FontFamily="YouYuan" FontWeight="Bold" FontSize="16"/>
-					<ComponentDesign:TextBoxEx HorizontalAlignment="Left" Height="45" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="305" Margin="63,158,0,0" Source="/ModuleDesign;component/Resources/Login/password.png" Title="密码" FontFamily="YouYuan" FontWeight="Bold" FontSize="16"/>
+					<ComponentDesign:TextBoxEx HorizontalAlignment="Left" Height="45" TextWrapping="Wrap" VerticalAlignment="Top" Width="305" Margin="63,99,0,0" Source="/ModuleDesign;component/Resources/Login/user.png" Title="用户" FontFamily="YouYuan" FontWeight="Bold" FontSize="16" WaterMark="请输入用户名"/>
+					<ComponentDesign:TextBoxEx HorizontalAlignment="Left" Height="45" TextWrapping="Wrap" VerticalAlignment="Top" Width="305" Margin="63,158,0,0" Source="/ModuleDesign;component/Resources/Login/password.png" Title="密码" FontFamily="YouYuan" FontWeight="Bold" FontSize="16" WaterMark="请输入密码"/>
 					<TextBlock HorizontalAlignment="Left" Height="16" Margin="63,225,0,0" TextWrapping="Wrap" Text="验证码" VerticalAlignment="Top" Width="50" FontFamily="SimSun" FontSize="16" FontWeight="Bold"/>
 					<TextBox HorizontalAlignment="Left" Height="28" Margin="122,219,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="148"/>
 					<Rectangle Fill="#FF9AA3B4" HorizontalAlignment="Left" Height="28" Margin="282,219,0,0" VerticalAlignment="Top" Width="86"/>
