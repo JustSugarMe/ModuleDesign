@@ -136,11 +136,18 @@
                         </VisualStateManager.VisualStateGroups>
                         <Border x:Name="Border" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" CornerRadius="1" Opacity="1">
                             <Grid>
-                            	<Border HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,0,0" Width="16" Height="16" >
-                            		<Image HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="Fill"/>
-                            	</Border>
-                            	<Border x:Name="ReadOnlyVisualElement" Background="#5EC9C9C9" Opacity="0"/>
-                            	<Border x:Name="MouseOverBorder" BorderBrush="Transparent" BorderThickness="1" Margin="26,0,1,0">
+                            	<Grid.ColumnDefinitions>
+                            		<ColumnDefinition Width="Auto"/>
+                            		<ColumnDefinition/>
+                            	</Grid.ColumnDefinitions>
+                            	<StackPanel Margin="5,3,3,3" Orientation="Horizontal">
+                            		<Border HorizontalAlignment="Left" VerticalAlignment="Center" Width="16" Height="16" Margin="0,0,3,0" >
+                            			<Image HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="Fill" Source="{TemplateBinding Source}"/>
+                            		</Border>
+                            		<TextBlock TextWrapping="Wrap" Text="{TemplateBinding Title}" VerticalAlignment="Center"/>
+                            	</StackPanel>
+                            	<Border x:Name="ReadOnlyVisualElement" Background="#5EC9C9C9" Opacity="0" Grid.ColumnSpan="2"/>
+                            	<Border x:Name="MouseOverBorder" BorderBrush="Transparent" BorderThickness="1" Margin="0,0,1,0" Grid.Column="1" VerticalAlignment="Center">
                             		<ScrollViewer x:Name="ContentElement" BorderThickness="0" IsTabStop="False" Padding="{TemplateBinding Padding}"/>
                             	</Border>
                             </Grid>

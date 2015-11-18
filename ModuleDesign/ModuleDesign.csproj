@@ -105,15 +105,14 @@
     <Folder Include="MapModule\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="LoginModule\登陆.jpg">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\ComponentDesign\ComponentDesign.csproj">
       <Project>{8e944d93-6a08-410f-8e1c-4ef24d833967}</Project>
       <Name>ComponentDesign</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Login\password.png" />
+    <Resource Include="Resources\Login\user.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

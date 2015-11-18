@@ -9,7 +9,7 @@
     
 	<Grid x:Name="LayoutRoot" Background="White">
 
-		<ComponentDesign:TextBoxEx HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBoxEx" VerticalAlignment="Top">
+		<ComponentDesign:TextBoxEx HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBoxEx" VerticalAlignment="Top" Source="user.png">
 			<ComponentDesign:TextBoxEx.Resources>
 				<ResourceDictionary>
 					<ResourceDictionary.MergedDictionaries>
@@ -17,9 +17,6 @@
 					</ResourceDictionary.MergedDictionaries>
 				</ResourceDictionary>
 			</ComponentDesign:TextBoxEx.Resources>
-			<ComponentDesign:TextBoxEx.Icon>
-				<Image Source="user.png" Stretch="Fill" Height="16" Width="16"/>
-			</ComponentDesign:TextBoxEx.Icon>
 		</ComponentDesign:TextBoxEx>
 
 	</Grid>
