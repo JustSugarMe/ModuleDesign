@@ -30,6 +30,7 @@
     <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
     <LinkedServerProject>
     </LinkedServerProject>
+    <ExpressionBlendVersion>12.0.51020.0</ExpressionBlendVersion>
   </PropertyGroup>
   <!-- This property group is only here to support building this project using the 
        MSBuild 3.5 toolset. In order to work correctly with this older toolset, it needs 
@@ -82,6 +83,9 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestComponent.xaml.cs">
+      <DependentUpon>TestComponent.xaml</DependentUpon>
+    </Compile>
     <Compile Include="TestLogin.xaml.cs">
       <DependentUpon>TestLogin.xaml</DependentUpon>
     </Compile>
@@ -95,6 +99,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="TestComponent.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="TestLogin.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -104,10 +112,17 @@
     <None Include="Properties\AppManifest.xml" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ComponentDesign\ComponentDesign.csproj">
+      <Project>{8e944d93-6a08-410f-8e1c-4ef24d833967}</Project>
+      <Name>ComponentDesign</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ModuleDesign\ModuleDesign.csproj">
       <Project>{f97ef3ee-5605-474f-821e-3874b3b169d2}</Project>
       <Name>ModuleDesign</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="user.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
