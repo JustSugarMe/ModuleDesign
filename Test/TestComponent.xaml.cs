@@ -18,7 +18,6 @@ namespace Test
         public TestComponent()
         {
             InitializeComponent();
-            LoginHelper.CreateValidateImage(LoginHelper.CreateValidateCode(), img, (int)border.Width, (int)border.Height);
         }
     }
 }
