@@ -9,6 +9,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Shapes;
+using ModuleDesign;
 
 namespace Test
 {
@@ -17,6 +18,7 @@ namespace Test
         public TestComponent()
         {
             InitializeComponent();
+            LoginHelper.CreateValidateImage(LoginHelper.CreateValidateCode(), img, (int)border.Width, (int)border.Height);
         }
     }
 }

@@ -8,7 +8,7 @@
     mc:Ignorable="d"
     d:DesignHeight="860" d:DesignWidth="1920">
     
-	<Grid x:Name="LayoutRoot" Background="#FF0091A0">
+	<Grid x:Name="LayoutRoot" Loaded="LayoutRoot_Loaded" Background="#FF0091A0">
 		<StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
 			<TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="四川省放射源在线监控管理系统" VerticalAlignment="Top" FontFamily="YouYuan" FontSize="48" FontWeight="Bold" Foreground="#FF20DC20" Padding="0,0,0,40"/>
 			<Border HorizontalAlignment="Center" Height="360" VerticalAlignment="Center" Width="450" Padding="10" Background="#FF64C38B" Margin="118,0">
@@ -19,7 +19,9 @@
 					<ComponentDesign:TextBoxEx HorizontalAlignment="Left" Height="45" TextWrapping="Wrap" VerticalAlignment="Top" Width="305" Margin="63,158,0,0" Source="/ModuleDesign;component/Resources/Login/password.png" Title="密码" FontFamily="YouYuan" FontWeight="Bold" FontSize="16" WaterMark="请输入密码"/>
 					<TextBlock HorizontalAlignment="Left" Height="16" Margin="63,225,0,0" TextWrapping="Wrap" Text="验证码" VerticalAlignment="Top" Width="50" FontFamily="SimSun" FontSize="16" FontWeight="Bold"/>
 					<TextBox HorizontalAlignment="Left" Height="28" Margin="122,219,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="148"/>
-					<Rectangle Fill="#FF9AA3B4" HorizontalAlignment="Left" Height="28" Margin="282,219,0,0" VerticalAlignment="Top" Width="86"/>
+					<Border x:Name="bdImage" HorizontalAlignment="Left" Height="28" Margin="282,219,0,0" VerticalAlignment="Top" Width="86" BorderThickness="1" BorderBrush="#FF697C8C">
+						<Image x:Name="img"/>
+					</Border>
 					<Button Content="登陆" HorizontalAlignment="Left" VerticalAlignment="Top" Width="211" Margin="63,263,0,0" Height="42" FontFamily="YouYuan" FontSize="24" FontWeight="Bold"/>
 					<Button Content="重置" HorizontalAlignment="Left" VerticalAlignment="Top" Width="94" Margin="274,263,0,0" Height="42" FontFamily="YouYuan" FontSize="24" FontWeight="Bold" IsEnabled="False"/>
 				</Grid>

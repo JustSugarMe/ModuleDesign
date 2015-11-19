@@ -61,17 +61,22 @@ namespace ComponentDesign
 
         protected override void OnGotFocus(RoutedEventArgs e)
         {
-            _WaterMark.Visibility = Visibility.Collapsed;
-
+            if (_WaterMark != null)
+            {
+                _WaterMark.Visibility = Visibility.Collapsed;
+            }
             base.OnGotFocus(e);
         }
 
         protected override void OnLostFocus(RoutedEventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(this.Text))
+            if (_WaterMark != null)
             {
-                _WaterMark.Visibility = Visibility.Visible;
-                this.Text = string.Empty;
+                if (string.IsNullOrWhiteSpace(this.Text))
+                {
+                    _WaterMark.Visibility = Visibility.Visible;
+                    this.Text = string.Empty;
+                }
             }
             base.OnLostFocus(e);
         }

@@ -18,6 +18,10 @@
 				</ResourceDictionary>
 			</ComponentDesign:TextBoxEx.Resources>
 		</ComponentDesign:TextBoxEx>
+		<Border x:Name="border" HorizontalAlignment="Left" Height="92" Margin="0,29,0,0" VerticalAlignment="Top" Width="190" BorderThickness="1" BorderBrush="#FF707070">
+			<Image x:Name="img"/>
+
+		</Border>
 
 	</Grid>
 </UserControl>
