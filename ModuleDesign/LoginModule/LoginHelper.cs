@@ -45,11 +45,11 @@ namespace ModuleDesign
                 stackPanel.Children.Add(textBlock);
             }
 
-            for (int lineNumber = 0; lineNumber < 10; lineNumber++)
-            {
-                Polyline line = DrawLines(width, height, colors, random);
-                stackPanel.Children.Add(line);
-            }
+            //for (int lineNumber = 0; lineNumber < 10; lineNumber++)
+            //{
+            //    Polyline line = DrawLines(width, height, colors, random);
+            //    stackPanel.Children.Add(line);
+            //}
 
             WriteableBitmap writeableBitmap = new WriteableBitmap(stackPanel, new TransformGroup());
             writeableBitmap.Render(stackPanel, new TransformGroup());

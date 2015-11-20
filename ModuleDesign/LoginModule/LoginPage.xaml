@@ -18,8 +18,8 @@
 					<ComponentDesign:TextBoxEx HorizontalAlignment="Left" Height="45" TextWrapping="Wrap" VerticalAlignment="Top" Width="305" Margin="63,99,0,0" Source="/ModuleDesign;component/Resources/Login/user.png" Title="用户" FontFamily="YouYuan" FontWeight="Bold" FontSize="16" WaterMark="请输入用户名"/>
 					<ComponentDesign:TextBoxEx HorizontalAlignment="Left" Height="45" TextWrapping="Wrap" VerticalAlignment="Top" Width="305" Margin="63,158,0,0" Source="/ModuleDesign;component/Resources/Login/password.png" Title="密码" FontFamily="YouYuan" FontWeight="Bold" FontSize="16" WaterMark="请输入密码"/>
 					<TextBlock HorizontalAlignment="Left" Height="16" Margin="63,225,0,0" TextWrapping="Wrap" Text="验证码" VerticalAlignment="Top" Width="50" FontFamily="SimSun" FontSize="16" FontWeight="Bold"/>
-					<TextBox HorizontalAlignment="Left" Height="28" Margin="122,219,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="148"/>
-					<Border x:Name="bdImage" HorizontalAlignment="Left" Height="28" Margin="282,219,0,0" VerticalAlignment="Top" Width="86" BorderThickness="1" BorderBrush="#FF697C8C">
+					<TextBox HorizontalAlignment="Left" Height="28" Margin="122,219,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148"/>
+					<Border x:Name="bdImage" MouseLeftButtonUp="bdImage_MouseLeftButtonUp" HorizontalAlignment="Left" Height="28" Margin="282,219,0,0" VerticalAlignment="Top" Width="86" BorderThickness="1" BorderBrush="#FF697C8C">
 						<Image x:Name="img"/>
 					</Border>
 					<Button Content="登陆" HorizontalAlignment="Left" VerticalAlignment="Top" Width="211" Margin="63,263,0,0" Height="42" FontFamily="YouYuan" FontSize="24" FontWeight="Bold"/>

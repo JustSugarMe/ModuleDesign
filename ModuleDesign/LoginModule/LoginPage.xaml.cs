@@ -29,5 +29,10 @@ namespace ModuleDesign
             string code = LoginHelper.CreateValidateCode();
             LoginHelper.CreateValidateImage(code, img, Convert.ToInt32(bdImage.Width), Convert.ToInt32(bdImage.Height));
         }
+
+        private void bdImage_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            CreateValidateImage();
+        }
     }
 }
