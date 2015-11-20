@@ -9,7 +9,7 @@ namespace ModuleDesign
 {
     public class LoginHelper
     {
-        public static string CreateValidateCode()
+        public static string CreateCode()
         {
             string result = string.Empty;
             string[] codes = new string[32] { "2", "3", "4", "5", "6", "7", "8", "9",
@@ -26,7 +26,7 @@ namespace ModuleDesign
             return result;
         }
 
-        public static void CreateValidateImage(string code, Image image, int width, int height)
+        public static void CreateImage(string code, Image image, int width, int height)
         {
             Color[] colors = { Colors.Black, Colors.Red, Colors.Blue, Colors.Green, 
                                 Colors.Orange, Colors.Brown, Colors.Brown };
