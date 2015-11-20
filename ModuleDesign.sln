@@ -7,9 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModuleDesign", "ModuleDesig
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModuleDesign.Web", "ModuleDesign.Web\ModuleDesign.Web.csproj", "{8E9ABC2D-EBC6-4ACA-82F9-4D8CA94092F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{86F340A1-354C-4208-BA8B-B83B1A60C564}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestModule", "Test\TestModule.csproj", "{86F340A1-354C-4208-BA8B-B83B1A60C564}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComponentDesign", "ComponentDesign\ComponentDesign.csproj", "{8E944D93-6A08-410F-8E1C-4EF24D833967}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestComponent", "TestComponent\TestComponent.csproj", "{43CC2718-90E7-43F1-9A0E-664858AEE90C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{8E944D93-6A08-410F-8E1C-4EF24D833967}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E944D93-6A08-410F-8E1C-4EF24D833967}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E944D93-6A08-410F-8E1C-4EF24D833967}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43CC2718-90E7-43F1-9A0E-664858AEE90C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43CC2718-90E7-43F1-9A0E-664858AEE90C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43CC2718-90E7-43F1-9A0E-664858AEE90C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43CC2718-90E7-43F1-9A0E-664858AEE90C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

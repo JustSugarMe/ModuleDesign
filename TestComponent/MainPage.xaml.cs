@@ -9,13 +9,12 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Shapes;
-using ModuleDesign;
 
-namespace Test
+namespace TestComponent
 {
-    public partial class TestComponent : UserControl
+    public partial class MainPage : UserControl
     {
-        public TestComponent()
+        public MainPage()
         {
             InitializeComponent();
         }
