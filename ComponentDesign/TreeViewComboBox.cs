@@ -10,18 +10,13 @@ using System.Windows.Media;
 using System.Windows.Media.Animation;
 using System.Windows.Shapes;
 
-namespace TestComponent
+namespace ComponentDesign
 {
-    public partial class TestComponent : UserControl
+    public class TreeViewComboBox : ComboBox
     {
-        public TestComponent()
+        public TreeViewComboBox()
         {
-            InitializeComponent();
-        }
-
-        private void LayoutRoot_Loaded(object sender, RoutedEventArgs e)
-        {
-
+            this.DefaultStyleKey = typeof(TreeViewComboBox);
         }
     }
 }
